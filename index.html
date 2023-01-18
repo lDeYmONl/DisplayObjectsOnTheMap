@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/title_logo.png" type="image/gif" />
+    <title>Об'єкти на мапі</title>
+
+    <!--Стилі-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./#source/mainStyle.scss" />
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!--Мапа leaflet-->
+    <link rel="stylesheet" href="/libraries/leaflet/leaflet.css" />
+    <script src="/libraries/leaflet/leaflet.js"></script>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="map"></div>
+      <div class="list-wrapper">
+        <div class="list">
+          <h3 class="list__header">Об'єкти</h3>
+          <input
+            type="text"
+            id="list__search"
+            class="list__search"
+            placeholder="Пошук"
+          />
+          <div class="list__content" id="list__content">
+            <!-- Таку структуру будуть мати динамічно сформовані елементи.
+            <div class="list__item" >
+              <img src="./images/car.png" alt="" class="list__item-img" />
+              <p class="list__item-name">Просто машина</p>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
